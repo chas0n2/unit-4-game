@@ -13,26 +13,30 @@
     <!--internal js file-->
     <script src="assets/javascript/game.js"></script>
  </head>
-<body>
+<body><!--Container for header-->
    <div class="container">
        <div class="row header">
-         <div class="col-md-12"><h1>Rupee Collector!</h1></div>
+         <div class="col-md-12"><h1 class="title">Rupee Collector!</h1></div>
    </div>
-        
+        <!--div for instructions (copy instructions in READme file)-->
         <div id="instructions">
             <br>
-            <h2>Instructions:</h2>
-            <br>
+            <h2 class="instructions">Instructions:</h2>
+            <br><!--creates a break-->
+            
+            
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
             <p>The value of each crystal is hidden from you until you click on it</p>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            
+            
         </div>
-        
+        <!--values and scores/columns and divs from bootstrap-->
         <div class="row third">
                 <div class="col-md-2"></div>
-                <div class="col-md-3" id="gameScore"><h2>Game Score:</h2></div>
+                <div class="col-md-3" id="gameScore"><h2>Score to Match:</h2></div>
                 <div class="col-md-2"></div>
                 <div class="col-md-3">
                   <div class="row" id="winScore">
@@ -44,7 +48,7 @@
                   <div class="col-md-2"></div>
                 </div>
               </div>
-              <!--div columns/container for picture images-->
+              <!--div columns/container for images-->
                 <div class="row crystals">
                     <div class="col-md-12">
                       <div class="row">
@@ -63,7 +67,7 @@
                       </div>
                     </div>
                   </div>
-            
+            <!--bottom colum/div for player score-->
                   <div class="row fifth">
                     <div class="col-md-4"></div>
                     <div class="col-md-3" id="playerScore">Player Score:</div>
